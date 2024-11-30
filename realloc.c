@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    int *ptr;
+    ptr=(int*)calloc(5,sizeof(int));
+
+    for(int i=0;i<5;i++){
+        printf("%d\n",ptr[i]);
+    }  
+     ptr=realloc(ptr,5);
+       for(int i=0;i<5;i++){
+        printf("%d\n",ptr[i]);
+       } 
+      
+  return 0;
+}
